@@ -7,15 +7,15 @@ brew update
 brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
-echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+# brew install coreutils
+# echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
+# brew install findutils
 # Install Bash 4
-brew install bash
+# brew install bash
 
 # Install wget with IRI support
-brew install wget --enable-iri
+# brew install wget --enable-iri
 
 # Install other useful binaries
 brew install ack

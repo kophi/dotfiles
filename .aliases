@@ -142,3 +142,6 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 # `cat` with beautiful colors. requires Pygments installed.
 # sudo easy_install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
+
+# netstat for the lazy
+alias nets='netstat -tulpe'

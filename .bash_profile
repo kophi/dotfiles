@@ -4,7 +4,7 @@ export PATH="$HOME/bin:$PATH"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,bin}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
@@ -37,3 +37,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# Load z.sh for god's sake!
+[ -f bin/z.sh ] && . bin/z.sh
